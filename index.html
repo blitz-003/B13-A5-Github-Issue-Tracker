@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Issues Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-base-200 flex items-center justify-center">
+    <div class="card w-full max-w-md bg-base-100 shadow-xl">
+      <div class="card-body items-center gap-4">
+        <div class="text-center">
+          <h1 class="text-2xl font-bold text-base-content">
+            GitHub Issues Tracker
+          </h1>
+          <p class="text-sm text-base-content/60 mt-1">
+            Sign in to manage your issues
+          </p>
+        </div>
+
+        <!-- Form -->
+        <div class="w-full flex flex-col space-y-6">
+          <!-- Username -->
+          <div class="form-control w-full">
+            <label class="label pb-1">
+              <span class="label-text font-medium">Username</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              class="input input-bordered w-full"
+            />
+            <label class="label pt-1">
+              <span class="label-text-alt text-primary">Default: admin</span>
+            </label>
+          </div>
+
+          <!-- Password -->
+          <div class="form-control w-full">
+            <label class="label pb-1">
+              <span class="label-text font-medium">Password</span>
+            </label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              class="input input-bordered w-full"
+            />
+            <label class="label pt-1">
+              <span class="label-text-alt text-primary">Default: admin123</span>
+            </label>
+          </div>
+
+          <!-- Sign In Button -->
+          <button class="btn btn-primary w-full mt-1 text-white font-semibold">
+            Sign In
+          </button>
+
+          <!-- Divider -->
+          <div class="divider text-base-content/40 text-xs">OR</div>
+
+          <!-- Demo Credentials -->
+          <div class="text-center text-sm text-base-content/60 mb-1">
+            Demo Credentials:
+          </div>
+          <div class="bg-base-200 rounded-lg p-4 text-center text-sm">
+            <p><span class="font-semibold">Username:</span> admin</p>
+            <p><span class="font-semibold">Password:</span> admin123</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
