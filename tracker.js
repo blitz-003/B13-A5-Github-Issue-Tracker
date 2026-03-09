@@ -164,7 +164,7 @@ function renderCard(issue) {
       </div>
       <div>
         <h3 class="font-semibold text-slate-800 text-sm leading-snug">${issue.title}</h3>
-        <p class="text-xs text-gray-400 mt-1 leading-relaxed">${issue.description}</p>
+        <p class="text-xs text-gray-400 mt-1 leading-relaxed line-clamp-2">${issue.description}</p>
       </div>
       <div class="flex flex-wrap gap-1.5">
         ${issue.labels.map(renderLabel).join("")}
