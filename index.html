@@ -37,7 +37,9 @@
             <label class="label pb-1">
               <span class="label-text font-medium">Username</span>
             </label>
+
             <input
+              id="username"
               type="text"
               placeholder="Enter Username"
               class="input input-bordered w-full"
@@ -53,6 +55,7 @@
               <span class="label-text font-medium">Password</span>
             </label>
             <input
+              id="password"
               type="password"
               placeholder="Enter Password"
               class="input input-bordered w-full"
@@ -63,7 +66,10 @@
           </div>
 
           <!-- Sign In Button -->
-          <button class="btn btn-primary w-full mt-1 text-white font-semibold">
+          <button
+            class="btn btn-primary w-full mt-1 text-white font-semibold"
+            id="login-btn"
+          >
             Sign In
           </button>
 
@@ -81,5 +87,18 @@
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById("login-btn").addEventListener("click", () => {
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const errorBox = document.getElementById("login-error");
+
+        if (username === "admin" && password === "admin123") {
+          window.location.href = "tracker.html";
+        } else {
+          errorBox.classList.remove("hidden");
+        }
+      });
+    </script>
   </body>
 </html>
