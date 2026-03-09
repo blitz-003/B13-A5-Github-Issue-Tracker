@@ -71,7 +71,7 @@ async function openModal(issueId) {
            Opened
          </span>`
       : `<span class="badge badge-soft badge-secondary gap-1">
-           <span class="w-1.5 h-1.5 rounded-full bg-purple-500 inline-block"></span>
+           <span class="w-1.5 h-1.5 rounded-full bg-pink-500 inline-block"></span>
            Closed
          </span>`;
 
@@ -173,7 +173,7 @@ function filterIssues(filter) {
         ? "btn btn-sm rounded-full tab-active px-6"
         : "btn btn-sm btn-outline rounded-full px-6 border-gray-300 text-gray-600";
   });
-  const filtered =
+  let filtered =
     filter === "all" ? issues : issues.filter((i) => i.status === filter);
   document.getElementById("issues-grid").innerHTML = filtered
     .map(renderCard)
@@ -181,21 +181,38 @@ function filterIssues(filter) {
 }
 
 // Search
+let searchTimeout;
 
 document.getElementById("search-input").addEventListener("input", (e) => {
-  const q = e.target.value.trim().toLowerCase();
-  const filtered = (
-    currentFilter === "all"
-      ? issues
-      : issues.filter((i) => i.status === currentFilter)
-  ).filter(
-    (i) =>
-      i.title.toLowerCase().includes(q) ||
-      i.description.toLowerCase().includes(q),
-  );
-  document.getElementById("issues-grid").innerHTML = filtered
-    .map(renderCard)
-    .join("");
-});
+  const searchText = e.target.value.trim();
 
+  clearTimeout(searchTimeout);
+
+  searchTimeout = setTimeout(async () => {
+    if (!searchText) {
+      fetchIssues();
+      return;
+    }
+
+    try {
+      const res = await fetch(
+        `https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${searchText}`,
+      );
+
+      const data = await res.json();
+
+      let results = data.data || data;
+
+      if (currentFilter !== "all") {
+        results = results.filter((i) => i.status === currentFilter);
+      }
+
+      document.getElementById("issues-grid").innerHTML = results
+        .map(renderCard)
+        .join("");
+    } catch (err) {
+      console.error("Search error:", err);
+    }
+  }, 400); // debounce delay
+});
 fetchIssues();
