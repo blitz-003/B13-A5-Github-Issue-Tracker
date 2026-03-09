@@ -111,7 +111,7 @@
       </div>
     </div>
 
-    <div class="w-11/12 mx-auto">
+    <div class="w-11/12 mx-auto" id="issues-panel">
       <div class="card bg-white shadow-sm border border-gray-200">
         <div class="card-body">
           <!-- Panel Header -->
@@ -126,7 +126,9 @@
                 <img src="./assets/Aperture.png" alt="" srcset="" />
               </div>
               <div>
-                <h2 class="text-xl font-bold text-slate-800">50 Issues</h2>
+                <h2 class="text-xl font-bold text-slate-800">
+                  <span id="issue-count">0</span> Issues
+                </h2>
                 <p class="text-sm text-gray-500">
                   Track and manage your project issues
                 </p>
@@ -152,7 +154,7 @@
     </div>
     <!-- Issues Grid -->
 
-    <div class="w-11/12 mx-auto pt-4 pb-8">
+    <div class="w-11/12 mx-auto pt-4 pb-8" id="grid">
       <div class="card shadow-sm border border-gray-200">
         <div
           id="issues-grid"

@@ -1,13 +1,25 @@
-console.log("hello");
-
 async function fetchIssues() {
   try {
+    document.getElementById("issues-panel").style.display = "none";
+    document.getElementById("issues-grid").innerHTML = `
+  <div class="flex justify-center items-center h-64 w-full col-span-full">
+    <div class="flex gap-2">
+      <span class="loading loading-ball loading-xs"></span>
+      <span class="loading loading-ball loading-sm"></span>
+      <span class="loading loading-ball loading-md"></span>
+      <span class="loading loading-ball loading-lg"></span>
+      <span class="loading loading-ball loading-xl"></span>
+    </div>
+  </div>
+`;
     const res = await fetch(
       "https://phi-lab-server.vercel.app/api/v1/lab/issues",
     );
     const data = await res.json();
 
     issues = data.data || data;
+
+    document.getElementById("issues-panel").style.display = "block";
     filterIssues(currentFilter);
   } catch (err) {
     console.error("Error fetching issues:", err);
@@ -130,6 +142,10 @@ function closeModal() {
   document.getElementById("issue-modal").close();
 }
 
+function updateIssueCount(list) {
+  document.getElementById("issue-count").textContent = list.length;
+}
+
 // Card
 
 function renderCard(issue) {
@@ -178,6 +194,7 @@ function filterIssues(filter) {
   document.getElementById("issues-grid").innerHTML = filtered
     .map(renderCard)
     .join("");
+  updateIssueCount(filtered);
 }
 
 // Search
