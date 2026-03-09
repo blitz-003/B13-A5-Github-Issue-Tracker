@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Issues Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Geist", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4f46e5",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <!-- Navbar -->
+    <div
+      class="navbar bg-white border-b border-gray-200 px-6 sticky top-0 z-50"
+    >
+      <div class="navbar-start gap-2">
+        <!-- GitHub Logo -->
+        <img src="./assets/github-logo.png" alt="github-logo" class="w-10" />
+        <span class="font-bold text-lg text-slate-800"
+          >GitHub Issues Tracker</span
+        >
+      </div>
+      <div class="navbar-end gap-3">
+        <div class="form-control">
+          <div
+            class="input input-bordered flex items-center gap-2 bg-gray-50 w-64"
+          >
+            <img src="./assets/MagnifyingGlass.png" />
+            <input
+              type="text"
+              placeholder="Search issues..."
+              class="grow bg-transparent outline-none text-sm"
+            />
+          </div>
+        </div>
+        <button
+          class="btn text-white text-sm font-semibold px-4"
+          style="background: #4f46e5; border-color: #4f46e5"
+        >
+          + New Issue
+        </button>
+      </div>
+    </div>
+
+
+
+    
+  </body>
+</html>
