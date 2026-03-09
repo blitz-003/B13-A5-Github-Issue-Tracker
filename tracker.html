@@ -162,6 +162,27 @@
         </div>
       </div>
     </div>
+    <dialog id="issue-modal" class="modal">
+      <div class="modal-box w-11/12 max-w-lg rounded-2xl p-6">
+        <!-- Dynamic content injected by openModal() -->
+        <div id="modal-content"></div>
+        <!-- Close button -->
+        <div class="modal-action mt-4">
+          <button
+            onclick="closeModal()"
+            class="btn text-white px-8"
+            style="background: #4f46e5; border-color: #4f46e5"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+      <!-- Click backdrop to close -->
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+
     <script src="./tracker.js" defer></script>
   </body>
 </html>

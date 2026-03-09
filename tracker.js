@@ -653,256 +653,10 @@ const issues = [
   },
 ];
 
-// {
-// "id": 1,
-// "title": "Fix navigation menu on mobile devices",
-// "description": "The navigation menu doesn't collapse properly on mobile devices. Need to fix the responsive behavior.",
-// "status": "open",
-// "labels": [
-// "bug",
-// "help wanted"
-// ],
-// "priority": "high",
-// "author": "john_doe",
-// "assignee": "jane_smith",
-// "createdAt": "2024-01-15T10:30:00Z",
-// "updatedAt": "2024-01-15T10:30:00Z"
-// }
-// const issues = [
-//   {
-//     id: 1,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-//   {
-//     id: 2,
-//     priority: "MEDIUM",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#f59e0b",
-//   },
-//   {
-//     id: 3,
-//     priority: "LOW",
-//     status: "closed",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#a855f7",
-//   },
-//   {
-//     id: 4,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-//   {
-//     id: 5,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-//   {
-//     id: 6,
-//     priority: "LOW",
-//     status: "closed",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["ENHANCEMENT"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#a855f7",
-//   },
-//   {
-//     id: 7,
-//     priority: "MEDIUM",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#f59e0b",
-//   },
-//   {
-//     id: 8,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-//   {
-//     id: 9,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-//   {
-//     id: 10,
-//     priority: "MEDIUM",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#f59e0b",
-//   },
-//   {
-//     id: 11,
-//     priority: "LOW",
-//     status: "closed",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#a855f7",
-//   },
-//   {
-//     id: 12,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-//   {
-//     id: 13,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-//   {
-//     id: 14,
-//     priority: "MEDIUM",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#f59e0b",
-//   },
-//   {
-//     id: 15,
-//     priority: "LOW",
-//     status: "closed",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#a855f7",
-//   },
-//   {
-//     id: 16,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-//   {
-//     id: 17,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-//   {
-//     id: 18,
-//     priority: "MEDIUM",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#f59e0b",
-//   },
-//   {
-//     id: 19,
-//     priority: "LOW",
-//     status: "closed",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#a855f7",
-//   },
-//   {
-//     id: 20,
-//     priority: "HIGH",
-//     status: "open",
-//     title: "Fix Navigation Menu On Mobile Devices",
-//     desc: "The navigation menu doesn't collapse properly on mobile devices...",
-//     labels: ["BUG", "HELP WANTED"],
-//     author: "john_doe",
-//     date: "1/15/2024",
-//     borderColor: "#22c55e",
-//   },
-// ];
-
 const priorityColors = {
-  high: { bg: "#fef2f2", text: "#ef4444", dot: "#ef4444" },
-  medium: { bg: "#fff7ed", text: "#f97316", dot: "#f97316" },
-  low: { bg: "#f8fafc", text: "#94a3b8", dot: "#94a3b8" },
-};
-
-const labelColors = {
-  bug: { bg: "#f0fdf4", text: "#16a34a" },
-  "help wanted": { bg: "#ecfdf5", text: "#059669" },
-  enchantment: { bg: "#f0fdf4", text: "#16a34a" },
-  documentation: { bg: "#f0fdf4", text: "#16a34a" },
-  "good first issue": { bg: "#f0fdf4", text: "#16a34a" },
+  high: { bg: "#fef2f2", text: "#ef4444" },
+  medium: { bg: "#fff7ed", text: "#f97316" },
+  low: { bg: "#f8fafc", text: "#94a3b8" },
 };
 
 const statusIcons = {
@@ -925,40 +679,113 @@ function renderLabel(label, index) {
   return `<span class="badge badge-soft ${variant}">${label}</span>`;
 }
 
+// Modal
+function openModal(issueId) {
+  const issue = issues.find((i) => i.id === issueId);
+  if (!issue) return;
+
+  const pc = priorityColors[issue.priority];
+  const isOpen = issue.status === "open";
+  const formattedDate = new Date(issue.createdAt).toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+
+  // Status badge
+  const statusBadge = isOpen
+    ? `<span class="badge badge-soft badge-success gap-1">
+         <span class="w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>
+         Opened
+       </span>`
+    : `<span class="badge badge-soft badge-secondary gap-1">
+         <span class="w-1.5 h-1.5 rounded-full bg-purple-500 inline-block"></span>
+         Closed
+       </span>`;
+
+  // Priority badge
+  const priorityBadge = pc
+    ? `<span class="badge font-semibold" style="background:${pc.bg};color:${pc.text};">${issue.priority.toUpperCase()}</span>`
+    : "";
+
+  // Labels
+  const labelsHtml = issue.labels
+    .map((label, index) => renderLabel(label, index))
+    .join("");
+
+  // Assignee
+  const assigneeHtml = issue.assignee
+    ? `<span class="font-semibold text-slate-800">${issue.assignee}</span>`
+    : `<span class="text-gray-400 italic">Unassigned</span>`;
+
+  document.getElementById("modal-content").innerHTML = `
+
+    <h2 class="text-lg font-bold text-slate-800 mb-3">${issue.title}</h2>
+
+  <div class="flex items-center gap-2 flex-wrap mb-3">
+      ${statusBadge}
+      <span class="text-xs text-gray-400">
+        Opened by <span class="font-medium text-gray-600">${issue.author}</span>
+        &bull; ${formattedDate}
+      </span>
+    </div>
+
+    <div class="flex flex-wrap gap-1.5 mb-4">
+      ${labelsHtml}
+    </div>
+
+    <p class="text-sm text-gray-500 mb-6">${issue.description}</p>
+
+    <div class="grid grid-cols-2 gap-4 bg-gray-50 rounded-xl p-4">
+      <div>
+        <p class="text-xs text-gray-400 mb-1">Assignee:</p>
+        ${assigneeHtml}
+      </div>
+      <div>
+        <p class="text-xs text-gray-400 mb-1">Priority:</p>
+        ${priorityBadge}
+      </div>
+    </div>
+  `;
+
+  document.getElementById("issue-modal").showModal();
+}
+
+function closeModal() {
+  document.getElementById("issue-modal").close();
+}
+
+// Card
+
 function renderCard(issue) {
   const pc = priorityColors[issue.priority];
-  const dateStr = issue.createdAt;
-
-  let borderColor = "";
-  if (issue["status"] === "open") {
-    borderColor = "#22c55e";
-  } else {
-    borderColor = "#a855f7";
-  }
-
-  const formatted = new Date(dateStr).toLocaleDateString("en-GB");
-
-  console.log(formatted);
+  const borderColor = issue.status === "open" ? "#22c55e" : "#a855f7";
+  const formatted = new Date(issue.createdAt).toLocaleDateString("en-GB");
 
   return `
-        <div class="issue-card rounded-xl border bg-white p-4 flex flex-col gap-3 cursor-pointer" style="border-top: 3px solid ${borderColor}; border-left:1px solid #e5e7eb; border-right:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb;">
-          <div class="flex items-center justify-between">
-            <span>${statusIcons[issue.status]}</span>
-            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full" style="background:${pc.bg};color:${pc.text};">${issue.priority}</span>
-          </div>
-          <div>
-            <h3 class="font-semibold text-slate-800 text-sm leading-snug">${issue.title}</h3>
-            <p class="text-xs text-gray-400 mt-1 leading-relaxed">${issue.description}</p>
-          </div>
-          <div class="flex flex-wrap gap-1.5">
-            ${issue.labels.map(renderLabel).join("")}
-          </div>
-          <div class="border-t border-gray-100 pt-2 mt-auto">
-            <p class="text-xs text-gray-400">#${issue.id} by <span class="text-gray-600 font-medium">${issue.author}</span></p>
-            <p class="text-xs text-gray-400">${formatted}</p>
-          </div>
-        </div>`;
+    <div class="issue-card rounded-xl border bg-white p-4 flex flex-col gap-3 cursor-pointer"
+         style="border-top:3px solid ${borderColor};border-left:1px solid #e5e7eb;border-right:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;"
+         onclick="openModal(${issue.id})">
+      <div class="flex items-center justify-between">
+        <span>${statusIcons[issue.status]}</span>
+        <span class="text-xs font-bold px-2.5 py-0.5 rounded-full"
+              style="background:${pc.bg};color:${pc.text};">${issue.priority}</span>
+      </div>
+      <div>
+        <h3 class="font-semibold text-slate-800 text-sm leading-snug">${issue.title}</h3>
+        <p class="text-xs text-gray-400 mt-1 leading-relaxed">${issue.description}</p>
+      </div>
+      <div class="flex flex-wrap gap-1.5">
+        ${issue.labels.map(renderLabel).join("")}
+      </div>
+      <div class="border-t border-gray-100 pt-2 mt-auto">
+        <p class="text-xs text-gray-400">#${issue.id} by <span class="text-gray-600 font-medium">${issue.author}</span></p>
+        <p class="text-xs text-gray-400">${formatted}</p>
+      </div>
+    </div>`;
 }
+
+// Filter function
 
 let currentFilter = "all";
 
@@ -977,5 +804,23 @@ function filterIssues(filter) {
     .map(renderCard)
     .join("");
 }
+
+// Search
+
+document.getElementById("search-input").addEventListener("input", (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  const filtered = (
+    currentFilter === "all"
+      ? issues
+      : issues.filter((i) => i.status === currentFilter)
+  ).filter(
+    (i) =>
+      i.title.toLowerCase().includes(q) ||
+      i.description.toLowerCase().includes(q),
+  );
+  document.getElementById("issues-grid").innerHTML = filtered
+    .map(renderCard)
+    .join("");
+});
 
 filterIssues("all");
